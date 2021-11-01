@@ -1,0 +1,2 @@
+# R5T.D0088.I0001
+A default HostStartupBase implementation for local scripts.
