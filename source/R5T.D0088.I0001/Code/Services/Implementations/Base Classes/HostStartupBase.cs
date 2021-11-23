@@ -28,7 +28,9 @@ namespace R5T.D0088.I0001
 
         public async Task ConfigureServices(IServiceCollection services)
         {
-            var requiredServices = await this.GetRequiredServices();
+            var requiredServiceActions = new RequiredServiceActionAggregation();
+                
+            await this.FillRequiredServiceActions(requiredServiceActions);
 
             // Services.
             // Level 0.
@@ -54,7 +56,8 @@ namespace R5T.D0088.I0001
                 providedServices);
         }
 
-        protected abstract Task<IRequiredServiceActionAggregation> GetRequiredServices();
+        // 'Fill' instead of 'Get' to allow a hierarchy of multiple HostStartupBases to each have a fill method distinguished by input parameter.
+        protected abstract Task FillRequiredServiceActions(IRequiredServiceActionAggregation requiredServiceActions);
 
         protected abstract Task ConfigureServices(IServiceCollection services,
             IProvidedServiceActionAggregation providedServicesAggregation);

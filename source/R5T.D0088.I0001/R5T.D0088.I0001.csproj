@@ -6,11 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.A0001\source\R5T.A0001\R5T.A0001.csproj" />
-    <ProjectReference Include="..\..\..\R5T.D0063\source\R5T.D0063.Default\R5T.D0063.Default.csproj" />
-    <ProjectReference Include="..\..\..\R5T.D0065\source\R5T.D0065.Standard\R5T.D0065.Standard.csproj" />
+    <ProjectReference Include="..\..\..\R5T.A0002\source\R5T.A0002\R5T.A0002.csproj" />
     <ProjectReference Include="..\..\..\R5T.D0088\source\R5T.D0088.Base\R5T.D0088.Base.csproj" />
-    <ProjectReference Include="..\..\..\R5T.Lombardy\source\R5T.Lombardy\R5T.Lombardy.csproj" />
-    <ProjectReference Include="..\..\..\R5T.T0062\source\R5T.T0062.X001\R5T.T0062.X001.csproj" />
   </ItemGroup>
 
 </Project>

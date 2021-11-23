@@ -30,7 +30,7 @@ namespace R5T.D0088.I0001.Construction
             return Task.CompletedTask;
         }
 
-        protected override Task<IRequiredServiceActionAggregation> GetRequiredServices()
+        protected override Task<IRequiredServiceActionAggregation> FillRequiredServiceActions()
         {
             var requiredSerivces = new RequiredServiceActionAggregation();
 
