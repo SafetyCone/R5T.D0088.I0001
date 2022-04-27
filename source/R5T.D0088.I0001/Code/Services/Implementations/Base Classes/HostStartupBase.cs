@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 
 using Microsoft.Extensions.Configuration;
@@ -8,12 +8,12 @@ using R5T.Lombardy;
 
 using R5T.A0001;
 using R5T.D0063.Default;
-using R5T.D0065.Standard;
+using R5T.D0065.Standard;using R5T.T0064;
 
 
 namespace R5T.D0088.I0001
-{
-    public abstract class HostStartupBase : IHostStartup
+{[ServiceImplementationMarker]
+    public abstract class HostStartupBase : IHostStartup,IServiceImplementation
     {
         //private IserviceX ServiceX { get; }
 
